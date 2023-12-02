@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level UpFront Hackhathon</title>
+
+    <link rel="stylesheet" href="app.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="">
+          <img
+            src="/assets/shopify-icon-desktop.svg"
+            alt="shopify-logo"
+            id="logo"
+          />
+        </a>
+
+        <div class="search-container">
+          <form action="#">
+            <img src="/assets/icon-search.svg" alt="" />
+            <input id="search" type="text" placeholder="Search" name="search" />
+          </form>
+        </div>
+        <div class="notification-group">
+          <button
+            id="notification-btn"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-label="Notifications"
+            aria-controls="menu-popup"
+          >
+            <img src="/assets/icon-bell.svg" alt="icon-bell" />
+          </button>
+          <div
+            role="alertdialog"
+            aria-labelledby="notification-btn"
+            class="notification-popup"
+          >
+            <div id="alerts-container">
+              <h1>Alerts</h1>
+              <div id="filter-group">
+                <button>
+                  <img src="/assets/FilterMajor.svg" alt="filter" />
+                </button>
+                <button>
+                  <img src="/assets/CircleTickMajor.svg" alt="circle tick" />
+                </button>
+              </div>
+            </div>
+            <div id="notification-content">
+              <span id="notification-info">Alerts about your store and account will show here</span>
+            </div>
+          </div>
+          <button
+            id="profile-menu"
+            aria-haspopup="true"
+            aria-expanded="false"
+            aria-controls="menu-popup"
+            class="menu-btn"
+          >
+            <span id="username">Davii Collections</span>
+            <span class="user-initials">DC</span>
+          </button>
+          <ul
+            id="menu-popup"
+            role="menu"
+            aria-labelledby="profile-menu"
+            class="menu-popup"
+          >
+            <li role="presentation">
+              <div class="user" aria-disabled="true">
+                <span class="user-acc">
+                  <span class="user-initials">DC</span>
+                  <span class="user-acc-name">Davii Collections</span>
+                </span>
+                <img src="/assets/correct-icon.svg" alt="correct icon" />
+              </div>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" href="#" class="menuitem-btn-with-icon">
+                <img src="/assets/store-icon.svg" alt="store-icon" />
+                All stores
+              </a>
+            </li>
+
+            <hr role="separator" aria-label="Menu divider" />
+
+            <li role="presentation">
+              <a role="menuitem" href="#"> Help Center </a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" href="#"> Changelog </a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" href="#"> Community forums </a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" href="#"> Help center </a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" href="#"> Hire a Shopify Partner </a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" href="#"> Keyboard Shortcuts </a>
+            </li>
+
+            <hr role="separator" aria-label="Menu divider" />
+
+            <li role="presentation">
+              <div class="user-info" aria-disabled="true">
+                David Michael
+                <span id="user-email">davidmichael@gmail.com</span>
+              </div>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" href="#"> Manage accounts </a>
+            </li>
+            <li role="presentation">
+              <a role="menuitem" href="#"> Log out </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="content-wrapper">
+        <div id="plan-cta">
+          <span class="plan-info">
+            <p>Extend your trial for $1/month for 3 months on select plans.</p>
+            <button id="plan-cta-btn">Select a plan</button>
+          </span>
+          <button id="close-btn">
+            <img src="/assets/close.svg" alt="close icon" />
+          </button>
+        </div>
+
+        <details id="accordion-step-guide">
+          <summary
+            id="main-summary"
+            aria-controls="panel1"
+            aria-expanded="false"
+          >
+            <div class="accordion-header">
+              <h1>Setup guide</h1>
+              <button id="main-accordion-control">
+                <img
+                  src="/assets/arrow-down.svg"
+                  alt="arrow-icon"
+                  id="arrow-down"
+                />
+              </button>
+            </div>
+            <p class="accordion-info">Use this personalized guide to get your store up and running.</p>
+            <div id="progres-details">
+              <p class="progress-update"><span>1</span> / 5 completed</p>
+              <div id="progress-bar-container">
+                <span id="progress-bar"></span>
+              </div>
+            </div>
+          </summary>
+          <div
+            id="panel1"
+            class="parent-accordion-content"
+            role="group"
+            aria-labelledby="panel1"
+          >
+            <details class="details active-accordion" open>
+              <summary>
+                <span id="checkbox-1-status" aria-live="polite"></span>
+                <button
+                  id="checkbox-1"
+                  class="checkbox"
+                  aria-label="Mark customize theme as done"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="dashed"
+                    id="dashed"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#8A8A8A"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-dasharray="5 5"
+                    />
+                  </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="spinner hidden"
+                    id="spinner"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2"
+                      stroke="#1C181D"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="checked hidden"
+                    id="checked"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="11.9996"
+                      cy="12"
+                      r="10"
+                      fill="#1C181D"
+                      stroke="#1C181D"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16.8163 8.64149C17.0604 8.88557 17.0604 9.2813 16.8163 9.52538L11.3997 14.942C11.1556 15.1861 10.7599 15.1861 10.5158 14.942L7.80745 12.2337C7.56337 11.9896 7.56337 11.5939 7.80745 11.3498C8.05153 11.1057 8.44725 11.1057 8.69133 11.3498L10.9577 13.6162L15.9324 8.64149C16.1765 8.39742 16.5723 8.39742 16.8163 8.64149Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-controls="step1"
+                  aria-expanded="true"
+                  class="check-box-label bold-text"
+                >
+                  Customize your online store
+                </button>
+              </summary>
+              <div class="accordion-content-container">
+                <div
+                  id="step1"
+                  class="accordion-content"
+                  aria-labelledby="step1"
+                >
+                  <div>
+                    <span>
+                      Choose a theme and a logo, colors, and images to reflect
+                      your brand. 
+                    </span>
+                    <a
+                      href="#"
+                      aria-label="Learn more about customizing your online store"
+                      >Learn more</a
+                    >
+                  </div>
+                  <button>Customize theme</button>
+                </div>
+                <img
+                  src="/assets/Customize your online store.img.png"
+                  alt="step 1 image"
+                />
+              </div>
+            </details>
+
+            <details class="details">
+              <summary>
+                <span id="checkbox-2-status" aria-live="polite"></span>
+                <button
+                  id="checkbox-2"
+                  class="checkbox"
+                  aria-label="Mark Add your first product as done"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="dashed"
+                    id="dashed2"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#8A8A8A"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-dasharray="5 5"
+                    />
+                  </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="spinner hidden"
+                    id="spinner2"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2"
+                      stroke="#1C181D"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="checked hidden"
+                    id="checked2"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="11.9996"
+                      cy="12"
+                      r="10"
+                      fill="#1C181D"
+                      stroke="#1C181D"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16.8163 8.64149C17.0604 8.88557 17.0604 9.2813 16.8163 9.52538L11.3997 14.942C11.1556 15.1861 10.7599 15.1861 10.5158 14.942L7.80745 12.2337C7.56337 11.9896 7.56337 11.5939 7.80745 11.3498C8.05153 11.1057 8.44725 11.1057 8.69133 11.3498L10.9577 13.6162L15.9324 8.64149C16.1765 8.39742 16.5723 8.39742 16.8163 8.64149Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-controls="step2"
+                  aria-expanded="false"
+                  class="check-box-label"
+                >
+                  Add your first product
+                </button>
+              </summary>
+              <div class="accordion-content-container">
+                <div
+                  id="step2"
+                  class="accordion-content"
+                  aria-labelledby="step2"
+                >
+                  <div>
+                    <span>
+                      Write a description, add photos, and set pricing for the
+                      products you plan to sell. 
+                    </span>
+                    <a
+                      href="#"
+                      aria-label="Learn more about adding your first product"
+                      >Learn more</a
+                    >
+                  </div>
+                  <button>Add product</button>
+                  <button id="btn2">Import product</button>
+                </div>
+                <img
+                  src="/assets/Add your first product.img.png"
+                  alt=" step 2 image"
+                />
+              </div>
+            </details>
+
+            <details class="details">
+              <summary>
+                <span id="checkbox-3-status" aria-live="polite"></span>
+                <button
+                  id="checkbox-3"
+                  class="checkbox"
+                  aria-label="Mark add a custom domain as done"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="dashed"
+                    id="dashed3"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#8A8A8A"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-dasharray="5 5"
+                    />
+                  </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="spinner hidden"
+                    id="spinner3"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2"
+                      stroke="#1C181D"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="checked hidden"
+                    id="checked3"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="11.9996"
+                      cy="12"
+                      r="10"
+                      fill="#1C181D"
+                      stroke="#1C181D"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16.8163 8.64149C17.0604 8.88557 17.0604 9.2813 16.8163 9.52538L11.3997 14.942C11.1556 15.1861 10.7599 15.1861 10.5158 14.942L7.80745 12.2337C7.56337 11.9896 7.56337 11.5939 7.80745 11.3498C8.05153 11.1057 8.44725 11.1057 8.69133 11.3498L10.9577 13.6162L15.9324 8.64149C16.1765 8.39742 16.5723 8.39742 16.8163 8.64149Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-controls="step3"
+                  aria-expanded="false"
+                  class="check-box-label"
+                >
+                  Add a custom domain
+                </button>
+              </summary>
+              <div class="accordion-content-container">
+                <div
+                  id="step3"
+                  class="accordion-content"
+                  aria-labelledby="step3"
+                >
+                  <div>
+                    <span>
+                      Your current domain is 222219.myshopify.com but you can
+                      add a custom domain to help customers find your online
+                      store. 
+                    </span>
+                    <a
+                      href="#"
+                      aria-label="Learn more about adding a custom domain"
+                      >Learn more</a
+                    >
+                  </div>
+                  <button>Add domain</button>
+                </div>
+                <img
+                  src="/assets/Add a custom domain.img.png"
+                  alt="step 3 image"
+                />
+              </div>
+            </details>
+
+            <details class="details">
+              <summary>
+                <span id="checkbox-4-status" aria-live="polite"></span>
+                <button
+                  id="checkbox-4"
+                  class="checkbox"
+                  aria-label="Mark name your store as done"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="dashed"
+                    id="dashed4"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#8A8A8A"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-dasharray="5 5"
+                    />
+                  </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="spinner hidden"
+                    id="spinner4"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2"
+                      stroke="#1C181D"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="checked hidden"
+                    id="checked4"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="11.9996"
+                      cy="12"
+                      r="10"
+                      fill="#1C181D"
+                      stroke="#1C181D"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16.8163 8.64149C17.0604 8.88557 17.0604 9.2813 16.8163 9.52538L11.3997 14.942C11.1556 15.1861 10.7599 15.1861 10.5158 14.942L7.80745 12.2337C7.56337 11.9896 7.56337 11.5939 7.80745 11.3498C8.05153 11.1057 8.44725 11.1057 8.69133 11.3498L10.9577 13.6162L15.9324 8.64149C16.1765 8.39742 16.5723 8.39742 16.8163 8.64149Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-controls="step4"
+                  aria-expanded="false"
+                  class="check-box-label"
+                >
+                  Name your store
+                </button>
+              </summary>
+              <div class="accordion-content-container">
+                <div
+                  id="step4"
+                  class="accordion-content"
+                  aria-labelledby="step4"
+                >
+                  <div>
+                    <span>
+                      Your temporary store name is currently Davii collections.
+                      The store name appears in your admin and your online
+                      store. 
+                    </span>
+                    <a href="#" aria-label="Learn more about naming your store"
+                      >Learn more</a
+                    >
+                  </div>
+                  <button>Name store</button>
+                </div>
+                <img src="/assets/Name your store.img.png" alt="step 4 image" />
+              </div>
+            </details>
+
+            <details class="details">
+              <summary>
+                <span id="checkbox-5-status" aria-live="polite"></span>
+                <button
+                  id="checkbox-5"
+                  class="checkbox"
+                  aria-label="Mark setup payment provider as done"
+                >
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="dashed"
+                    id="dashed5"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="#8A8A8A"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-dasharray="5 5"
+                    />
+                  </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="spinner hidden"
+                    id="spinner5"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M22.0004 12C22.0004 13.9778 21.4139 15.9112 20.3151 17.5557C19.2162 19.2002 17.6545 20.4819 15.8272 21.2388C13.9999 21.9957 11.9893 22.1937 10.0495 21.8079C8.10965 21.422 6.32782 20.4696 4.9293 19.0711C3.53077 17.6725 2.57837 15.8907 2.19251 13.9509C1.80666 12.0111 2.00469 10.0004 2.76157 8.17317C3.51845 6.3459 4.80017 4.78412 6.44466 3.6853C8.08916 2.58649 10.0226 2 12.0004 2"
+                      stroke="#1C181D"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="checked hidden"
+                    id="checked5"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="11.9996"
+                      cy="12"
+                      r="10"
+                      fill="#1C181D"
+                      stroke="#1C181D"
+                      stroke-width="2.08333"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M16.8163 8.64149C17.0604 8.88557 17.0604 9.2813 16.8163 9.52538L11.3997 14.942C11.1556 15.1861 10.7599 15.1861 10.5158 14.942L7.80745 12.2337C7.56337 11.9896 7.56337 11.5939 7.80745 11.3498C8.05153 11.1057 8.44725 11.1057 8.69133 11.3498L10.9577 13.6162L15.9324 8.64149C16.1765 8.39742 16.5723 8.39742 16.8163 8.64149Z"
+                      fill="white"
+                    />
+                  </svg>
+                </button>
+                <button
+                  aria-controls="step5"
+                  aria-expanded="false"
+                  class="check-box-label"
+                >
+                  Setup a payment provider
+                </button>
+              </summary>
+              <div class="accordion-content-container">
+                <div
+                  id="step5"
+                  class="accordion-content"
+                  aria-labelledby="step5"
+                >
+                  <div>
+                    <span>
+                      Choose a payment provider to start accepting payments.
+                      You’ll need to create an account with the payment provider
+                      and set it up with your Shopify store. 
+                    </span>
+                    <a
+                      href="#"
+                      aria-label="Learn more about setting up a payment provider"
+                      >Learn more</a
+                    >
+                  </div>
+                  <button>Setup payment</button>
+                </div>
+                <img
+                  src="/assets/Set up a payment provider.img.png"
+                  alt="step 5 image"
+                />
+              </div>
+            </details>
+          </div>
+        </details>
+      </div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
