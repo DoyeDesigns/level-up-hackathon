@@ -708,4 +708,8 @@ nav {
 .accordion-content-container img {
     display: none;
 }
+
+summary:first-of-type {
+    list-style: none;
+}
   }
